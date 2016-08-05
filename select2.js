@@ -2640,6 +2640,9 @@ the specific language governing permissions and limitations under the Apache Lic
 
         // single
         updateSelection: function (data) {
+            if (!this.selection) {
+                return;
+            }
 
             var container=this.selection.find(".select2-chosen"), formatted, cssClass;
 
